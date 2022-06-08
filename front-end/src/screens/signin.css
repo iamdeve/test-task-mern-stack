@@ -1,0 +1,14 @@
+.login-form{
+    margin: 10px;
+    width: 40%;
+    margin: auto;
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.error{
+    text-align: center;
+    padding: 10px;
+    color: red;
+    border: 1px solid red;
+}
