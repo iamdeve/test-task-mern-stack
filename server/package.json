@@ -1,0 +1,23 @@
+{
+	"name": "test-task",
+	"version": "1.0.0",
+	"description": "Test task for mean stack",
+	"main": "app.js",
+	"type": "module",
+	"scripts": {
+		"start": "nodemon app.js --experimental-modules"
+	},
+	"author": "Yamin Yasin",
+	"license": "ISC",
+	"dependencies": {
+		"bcrypt": "^5.0.1",
+		"cors": "^2.8.5",
+		"dotenv": "^16.0.1",
+		"express": "^4.18.1",
+		"joi": "^17.6.0",
+		"jsonwebtoken": "^8.5.1",
+		"mongoose": "^6.3.5",
+		"morgan": "^1.10.0",
+		"nodemailer": "^6.7.5"
+	}
+}

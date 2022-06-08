@@ -1,0 +1,323 @@
+{
+	"info": {
+		"_postman_id": "669c80cd-b16e-4363-8286-082657604d02",
+		"name": "TestTask",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"Yamin\",\r\n    \"email\":\"yyaminyasin@gmail.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"yyaminyasin@gmail.com\",\r\n    \"password\":\"3q8*qdrfY\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Category",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\":\"tractor\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/category",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"category\":\"new\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/category/629fb258cc4d36e05e6d9f75",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category",
+						"629fb258cc4d36e05e6d9f75"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\":\"629fac40a1cb862047ec5a6c\",\r\n    \"name\":\"dassssss\",\r\n    \"color\":\"ressssd\",\r\n    \"model\":\"134sss\",\r\n    \"make\":\"honda\",\r\n    \"registrationNo\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/category/629fb258cc4d36e05e6d9f75?Authorization=Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"category",
+						"629fb258cc4d36e05e6d9f75"
+					],
+					"query": [
+						{
+							"key": "Authorization",
+							"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\":\"629fac40a1cb862047ec5a6c\",\r\n    \"name\":\"das\",\r\n    \"color\":\"red\",\r\n    \"model\":\"134\",\r\n    \"make\":\"honda\",\r\n    \"registrationNo\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add Car",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjlmYTI1NzAyOWU5YjMzOTE5YTA4NWYiLCJuYW1lIjoiWWFtaW4iLCJlbWFpbCI6Inl5YW1pbnlhc2luQGdtYWlsLmNvbSIsInBhc3N3b3JkIjoiJDJiJDEwJG5mWXdXVHFlS2NGSDNBLjhsN0h0WWVRQ0YvcUdwQmJSY2xDM1BPTXhMS1lJaENGc3hYWW5PIiwiX192IjowLCJpYXQiOjE2NTQ2MzIyMDYsImV4cCI6MTY1NDYzNTgwNn0.r_7IyQ_UxMbjrqgaZh7vOWfnPGT4pYYViB6-PjzowQs",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\":\"629fb4f2566dcc24b4188d6d\",\r\n    \"name\":\"das\",\r\n    \"color\":\"red\",\r\n    \"model\":\"134\",\r\n    \"make\":\"honda\",\r\n    \"registrationNo\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Car",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\":\"629fac40a1cb862047ec5a6c\",\r\n    \"name\":\"dassssss\",\r\n    \"color\":\"ressssd\",\r\n    \"model\":\"134sss\",\r\n    \"make\":\"honda\",\r\n    \"registrationNo\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/car/629fac40a1cb862047ec5a6c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"629fac40a1cb862047ec5a6c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Car",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryId\":\"629fac40a1cb862047ec5a6c\",\r\n    \"name\":\"das\",\r\n    \"color\":\"red\",\r\n    \"model\":\"134\",\r\n    \"make\":\"honda\",\r\n    \"registrationNo\":\"123456\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/car/629fac91a1cb862047ec5a6e",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"car",
+						"629fac91a1cb862047ec5a6e"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/cars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"cars"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
